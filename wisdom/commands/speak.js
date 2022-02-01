@@ -81,7 +81,7 @@ function handle(interaction) {
         displayName = interaction.member.displayName;
         const user = interaction.options.get('user');
         // Allow people to hug/bun/compliment others, but not bots.
-        if (user && !user.user.bot) {
+        if (user) {
             displayName = user.member.displayName;
         }
     }
